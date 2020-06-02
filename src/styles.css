@@ -24,7 +24,7 @@
   height: 30%;
   border: solid 1px;
   border-color: rgb(38, 89, 119);
-  align-self: flex-start;
+  align-self: center;
   margin-left: 5%;
   margin-right: 15%;
 }
@@ -104,6 +104,15 @@
 .clearButton {
   background-color: rgba(238, 102, 102, 0.4);
   color: rgb(238, 102, 102);
+}
+
+.disabled {
+  background-color: rgba(136, 128, 128, 0.4);
+  color: rgb(136, 128, 128);
+  pointer-events: none;
+}
+.disabled:hover {
+  filter: brightness(100%) !important;
 }
 
 body {

@@ -101,11 +101,16 @@ class Drawer extends Component {
             <button className={"button goButton"}>GO</button>
           )}
         </div>
-        <button className={"button stepButton"} onClick={() => this.gameStep()}>
+        <button
+          className={`button ${this.state.running ? "disabled" : "stepButton"}`}
+          onClick={() => this.gameStep()}
+        >
           STEP
         </button>
         <button
-          className={"button clearButton"}
+          className={`button ${
+            this.state.running ? "disabled" : "clearButton"
+          }`}
           onClick={() => this.clearBoard()}
         >
           CLEAR
