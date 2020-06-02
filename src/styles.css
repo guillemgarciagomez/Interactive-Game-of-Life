@@ -1,0 +1,112 @@
+.Interface {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: flex-start;
+}
+
+.BoardAndDrawer {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.BoardAndDrawer:before {
+  content: "";
+  display: block;
+  padding-bottom: 60%;
+}
+
+.Drawer {
+  width: 10%;
+  height: 100%;
+  border: solid 1px;
+  border-color: rgb(38, 89, 119);
+  align-self: flex-start;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.Board {
+  border: solid 1px;
+  border-color: rgb(38, 89, 119);
+  width: 60%;
+  height: 100%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Header {
+  align-self: center;
+  color: rgb(255, 255, 255);
+}
+
+.offCell {
+  width: 2%;
+  transition: 0.2s ease-in-out;
+}
+
+.offCell:hover {
+  background-color: rgb(38, 89, 119);
+  transition: 0s;
+}
+
+.onCell {
+  width: 2%;
+  transition: 0.2s ease-in-out;
+  background-color: rgb(41, 130, 182);
+}
+
+.onCell:hover {
+  background-color: rgb(38, 89, 119);
+  transition: 0s;
+}
+
+.button {
+  color: rgb(22, 20, 20);
+  width: 100%;
+  height: 10%;
+  border: 0;
+  outline: none;
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+.button:hover {
+  filter: brightness(120%);
+}
+
+.stepButton {
+  background-color: rgba(74, 150, 194, 0.4);
+  color: rgb(74, 150, 194);
+}
+
+.clearButton {
+  background-color: rgba(238, 102, 102, 0.4);
+  color: rgb(238, 102, 102);
+}
+
+body {
+  background-color: rgb(21, 21, 21);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
