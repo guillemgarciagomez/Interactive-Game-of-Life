@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+import StopButton from "./StopButton";
+
 function mapStateToProps(state) {
   return {
     matrix: state.matrix
@@ -81,9 +83,24 @@ class Drawer extends Component {
     });
   };
 
+  gameRunStop = () => {
+    if (this.state.running) {
+      this.setState({ running: false });
+    } else {
+      this.setState({ running: true });
+    }
+  };
+
   render() {
     return (
       <div className="Drawer">
+        <div onClick={this.gameRunStop} className={"buttonWrapper"}>
+          {this.state.running ? (
+            <StopButton gameStep={this.gameStep} />
+          ) : (
+            <button className={"button goButton"}>GO</button>
+          )}
+        </div>
         <button className={"button stepButton"} onClick={() => this.gameStep()}>
           STEP
         </button>

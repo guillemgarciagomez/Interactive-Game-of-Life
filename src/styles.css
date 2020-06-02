@@ -16,23 +16,23 @@
 .BoardAndDrawer:before {
   content: "";
   display: block;
-  padding-bottom: 60%;
+  padding-bottom: 45%;
 }
 
 .Drawer {
   width: 10%;
-  height: 100%;
+  height: 30%;
   border: solid 1px;
   border-color: rgb(38, 89, 119);
   align-self: flex-start;
   margin-left: 5%;
-  margin-right: 10%;
+  margin-right: 15%;
 }
 
 .Board {
   border: solid 1px;
   border-color: rgb(38, 89, 119);
-  width: 60%;
+  width: 45%;
   height: 100%;
   align-self: flex-start;
   display: flex;
@@ -69,11 +69,16 @@
 .button {
   color: rgb(22, 20, 20);
   width: 100%;
-  height: 10%;
+  height: 33.3%;
   border: 0;
   outline: none;
   transition: 0.2s ease;
   text-align: center;
+}
+
+.buttonWrapper {
+  width: 100%;
+  height: 33.3%;
 }
 
 .button:hover {
@@ -83,6 +88,17 @@
 .stepButton {
   background-color: rgba(74, 150, 194, 0.4);
   color: rgb(74, 150, 194);
+}
+
+.goButton {
+  height: 100%;
+  background-color: rgba(54, 192, 73, 0.4);
+  color: rgb(54, 192, 73);
+}
+.stopButton {
+  height: 100%;
+  background-color: rgba(192, 160, 54, 0.4);
+  color: rgb(192, 160, 54);
 }
 
 .clearButton {
